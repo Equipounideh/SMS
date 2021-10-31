@@ -1,0 +1,107 @@
+﻿@model IEnumerable<Proyectos_profesionales.Models.Reporte>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Fecha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.A_Observación)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Observación)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comportamiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripción)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acciones)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Condición)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Criticidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.P_Retroalmentada)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aspectos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Resposable)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Archibos)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.A_Observación)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Observación)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comportamiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripción)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Acciones)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Acto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Condición)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Criticidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.P_Retroalmentada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aspectos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Resposable)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Archibos)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ReporteId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ReporteId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ReporteId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

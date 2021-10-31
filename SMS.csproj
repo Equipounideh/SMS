@@ -1,0 +1,362 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{9077AE4F-7CBD-490B-9A31-C7FB48636509}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>SMS</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include="Proyectos_profesionales\appsettings.Development.json" />
+    <None Include="Proyectos_profesionales\appsettings.json" />
+    <None Include="Proyectos_profesionales\Areas\Identity\Pages\_ViewStart.cshtml" />
+    <None Include="Proyectos_profesionales\bin\Debug\net5.0\appsettings.Development.json" />
+    <None Include="Proyectos_profesionales\bin\Debug\net5.0\appsettings.json" />
+    <None Include="Proyectos_profesionales\bin\Debug\net5.0\Proyectos_profesionales.deps.json" />
+    <None Include="Proyectos_profesionales\bin\Debug\net5.0\Proyectos_profesionales.runtimeconfig.dev.json" />
+    <None Include="Proyectos_profesionales\bin\Debug\net5.0\Proyectos_profesionales.runtimeconfig.json" />
+    <None Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.AssemblyInfoInputs.cache" />
+    <None Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.assets.cache" />
+    <None Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.csproj.AssemblyReference.cache" />
+    <None Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.csproj.CopyComplete" />
+    <None Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.csproj.CoreCompileInputs.cache" />
+    <None Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.genruntimeconfig.cache" />
+    <None Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.RazorAssemblyInfo.cache" />
+    <None Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.RazorCoreGenerate.cache" />
+    <None Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.RazorTargetAssemblyInfo.cache" />
+    <None Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.TagHelpers.input.cache" />
+    <None Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.TagHelpers.output.cache" />
+    <None Include="Proyectos_profesionales\obj\Debug\net5.0\staticwebassets\Proyectos_profesionales.StaticWebAssets.Manifest.cache" />
+    <None Include="Proyectos_profesionales\obj\project.assets.json" />
+    <None Include="Proyectos_profesionales\obj\project.nuget.cache" />
+    <None Include="Proyectos_profesionales\obj\Proyectos_profesionales.csproj.nuget.dgspec.json" />
+    <None Include="Proyectos_profesionales\obj\Proyectos_profesionales.csproj.nuget.g.props" />
+    <None Include="Proyectos_profesionales\obj\Proyectos_profesionales.csproj.nuget.g.targets" />
+    <None Include="Proyectos_profesionales\obj\Release\net5.0\Proyectos_profesionales.AssemblyInfoInputs.cache" />
+    <None Include="Proyectos_profesionales\obj\Release\net5.0\Proyectos_profesionales.assets.cache" />
+    <None Include="Proyectos_profesionales\obj\Release\net5.0\Proyectos_profesionales.csproj.AssemblyReference.cache" />
+    <None Include="Proyectos_profesionales\obj\Release\net5.0\Proyectos_profesionales.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Proyectos_profesionales\obj\Release\net5.0\Proyectos_profesionales.RazorAssemblyInfo.cache" />
+    <None Include="Proyectos_profesionales\Properties\launchSettings.json" />
+    <None Include="Proyectos_profesionales\Properties\serviceDependencies.json" />
+    <None Include="Proyectos_profesionales\Properties\serviceDependencies.local.json" />
+    <None Include="Proyectos_profesionales\Proyectos_profesionales.csproj" />
+    <None Include="Proyectos_profesionales\Views\Empleadoes\Create.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Empleadoes\Delete.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Empleadoes\Details.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Empleadoes\Edit.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Empleadoes\Index.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Formularios\Create.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Formularios\Delete.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Formularios\Details.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Formularios\Edit.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Formularios\Index.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Formularios\ShowSearchForm.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Historials\Create.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Historials\Delete.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Historials\Details.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Historials\Edit.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Historials\Index.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Home\Index.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Home\Privacy.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Reportes\Create.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Reportes\Delete.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Reportes\Details.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Reportes\Edit.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Reportes\Index.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Shared\Error.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Shared\_Layout.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Shared\_LoginPartial.cshtml" />
+    <None Include="Proyectos_profesionales\Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Include="Proyectos_profesionales\Views\_ViewImports.cshtml" />
+    <None Include="Proyectos_profesionales\Views\_ViewStart.cshtml" />
+    <None Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Include="Proyectos_profesionales\wwwroot\lib\bootstrap\LICENSE" />
+    <None Include="Proyectos_profesionales\wwwroot\lib\jquery-validation\LICENSE.md" />
+    <None Include="Proyectos_profesionales\wwwroot\lib\jquery\dist\jquery.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Proyectos_profesionales\Controllers\EmpleadoesController.cs" />
+    <Compile Include="Proyectos_profesionales\Controllers\FormulariosController.cs" />
+    <Compile Include="Proyectos_profesionales\Controllers\HistorialsController.cs" />
+    <Compile Include="Proyectos_profesionales\Controllers\HomeController.cs" />
+    <Compile Include="Proyectos_profesionales\Controllers\ReportesController.cs" />
+    <Compile Include="Proyectos_profesionales\Data\ApplicationDbContext.cs" />
+    <Compile Include="Proyectos_profesionales\Data\Migrations\00000000000000_CreateIdentitySchema.cs" />
+    <Compile Include="Proyectos_profesionales\Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs">
+      <DependentUpon>00000000000000_CreateIdentitySchema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyectos_profesionales\Data\Migrations\20211023223244_initialsetup.cs" />
+    <Compile Include="Proyectos_profesionales\Data\Migrations\20211023223244_initialsetup.Designer.cs">
+      <DependentUpon>20211023223244_initialsetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyectos_profesionales\Data\Migrations\20211028042519_[migrationEmpleado].cs" />
+    <Compile Include="Proyectos_profesionales\Data\Migrations\20211028042519_[migrationEmpleado].Designer.cs">
+      <DependentUpon>20211028042519_[migrationEmpleado].cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyectos_profesionales\Data\Migrations\20211031053056_Base.cs" />
+    <Compile Include="Proyectos_profesionales\Data\Migrations\20211031053056_Base.Designer.cs">
+      <DependentUpon>20211031053056_Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyectos_profesionales\Data\Migrations\ApplicationDbContextModelSnapshot.cs" />
+    <Compile Include="Proyectos_profesionales\Models\Empleado.cs" />
+    <Compile Include="Proyectos_profesionales\Models\ErrorViewModel.cs" />
+    <Compile Include="Proyectos_profesionales\Models\Formulario.cs" />
+    <Compile Include="Proyectos_profesionales\Models\Historial.cs" />
+    <Compile Include="Proyectos_profesionales\Models\Reporte.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.AssemblyInfo.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.MvcApplicationPartsAssemblyInfo.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.RazorAssemblyInfo.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.RazorTargetAssemblyInfo.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Empleadoes\Create.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Empleadoes\Delete.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Empleadoes\Details.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Empleadoes\Edit.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Empleadoes\Index.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Formularios\Create.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Formularios\Delete.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Formularios\Details.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Formularios\Edit.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Formularios\Index.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Formularios\ShowSearchForm.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Historials\Create.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Historials\Delete.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Historials\Details.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Historials\Edit.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Historials\Index.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Reportes\Create.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Reportes\Delete.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Reportes\Details.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Reportes\Edit.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Reportes\Index.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Release\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Release\net5.0\Proyectos_profesionales.AssemblyInfo.cs" />
+    <Compile Include="Proyectos_profesionales\obj\Release\net5.0\Proyectos_profesionales.RazorAssemblyInfo.cs" />
+    <Compile Include="Proyectos_profesionales\Program.cs" />
+    <Compile Include="Proyectos_profesionales\Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Humanizer.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.Identity.Client.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Newtonsoft.Json.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Proyectos_profesionales.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Proyectos_profesionales.exe" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Proyectos_profesionales.pdb" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Proyectos_profesionales.StaticWebAssets.xml" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Proyectos_profesionales.Views.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\Proyectos_profesionales.Views.pdb" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\ref\Proyectos_profesionales.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\System.Composition.AttributedModel.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\System.Composition.Convention.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\System.Composition.Hosting.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\System.Composition.Runtime.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\System.Composition.TypedParts.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\System.Runtime.Caching.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll" />
+    <Content Include="Proyectos_profesionales\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <Content Include="Proyectos_profesionales\obj\Debug\net5.0\apphost.exe" />
+    <Content Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.csproj.FileListAbsolute.txt" />
+    <Content Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.dll" />
+    <Content Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.pdb" />
+    <Content Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.Views.dll" />
+    <Content Include="Proyectos_profesionales\obj\Debug\net5.0\Proyectos_profesionales.Views.pdb" />
+    <Content Include="Proyectos_profesionales\obj\Debug\net5.0\ref\Proyectos_profesionales.dll" />
+    <Content Include="Proyectos_profesionales\obj\Debug\net5.0\staticwebassets\Proyectos_profesionales.StaticWebAssets.xml" />
+    <Content Include="Proyectos_profesionales\Properties\serviceDependencies.local.json.user" />
+    <Content Include="Proyectos_profesionales\Proyectos_profesionales.csproj.user" />
+    <Content Include="Proyectos_profesionales\wwwroot\css\site.css" />
+    <Content Include="Proyectos_profesionales\wwwroot\favicon.ico" />
+    <Content Include="Proyectos_profesionales\wwwroot\js\site.js" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\jquery\dist\jquery.js" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\jquery\dist\jquery.min.js" />
+    <Content Include="Proyectos_profesionales\wwwroot\lib\jquery\LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Proyectos_profesionales\bin\Release\net5.0\ref\" />
+    <Folder Include="Proyectos_profesionales\obj\Release\net5.0\ref\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
